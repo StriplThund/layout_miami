@@ -1,0 +1,30 @@
+.icon {
+  display: flex;
+  width: 24px;
+  height: 24px;
+  background-size: cover;
+  background-position: center;
+
+  @include onTablet {
+    width: 32px;
+    height: 32px;
+  }
+}
+
+.icon--phone {
+  background-image: url(../images/icons/Icon-Phone-call.svg);
+}
+
+.icon--burger {
+  background-image: url(../images/icons/Icon-Burger-menu.svg);
+  transition: 0.3s;
+
+  &:hover {
+    transform: scale(1.1);
+    background-image: url(../images/icons/Icon-Burger-menu-hover.svg);
+  }
+}
+
+.icon--cross {
+  background-image: url(../images/icons/Icon-Cross.svg);
+}

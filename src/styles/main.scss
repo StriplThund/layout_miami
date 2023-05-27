@@ -1,7 +1,13 @@
 @import "utils";
-@import "fonts";
-@import "typography";
+/* @import "fonts";
+ @import "typography"; */
+@import "normalize";
 
-body {
-  background: $c-gray;
-}
+@import "page";
+
+@import "icon";
+@import "header";
+@import "logo";
+@import "aside";
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
