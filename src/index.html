@@ -60,7 +60,7 @@
           <a href="#details" class="menu__link">details</a>
         </li>
         <li class="menu__item">
-          <a href="#contacts" class="menu__link">contacts</a>
+          <a href="#contact-us" class="menu__link">contacts</a>
         </li>
       </ul>
       <div class="menu__bottom">
@@ -214,10 +214,59 @@
           </div>
         </div>
       </section>
-      <section class="section">
+
+      <section class="section contact" id="contact-us">
         <h2 class="section__title">Contact us</h2>
+        <div class="contact__wrapper">
+          <form class="contact__form">
+            <input
+              name="name"
+              type="text"
+              placeholder="Name"
+              class="contact__input"
+            >
+            <input
+              name="emai"
+              type="text"
+              placeholder="Email"
+              class="contact__input"
+            >
+            <textarea
+              class="contact__input contact__input--textarea"
+              placeholder="Message"
+            >
+            </textarea>
+
+            <button class="button button--contact">
+              Send
+            </button>
+          </form>
+
+          <div class="contact__desc">
+            <div>
+              <p class="contact__pgr">Phone</p>
+              <a href="tel: +380 664-84-861" class="contact__text">+380 664-84-861</a>
+            </div>
+
+            <div>
+              <p class="contact__pgr">Email</p>
+              <a href="mailto:hello@miami.com" class="contact__text">hello@miami.com</a>
+            </div>
+            <div>
+              <p class="contact__pgr">Address</p>
+              <p class="contact__text">
+                400 first ave.<br>
+                suite 700 <br>
+                Minneapolis, MN 55401
+              </p>
+            </div>
+          </div>
+        </div>
       </section>
     </div>
+
+    <footer class="footer">
+    </footer>
   </body>
 </html>
 
