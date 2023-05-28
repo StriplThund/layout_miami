@@ -2,4 +2,7 @@
   font-family: "Poppins", sans-serif;
   color: $text-color;
   background: $c-gray;
+  min-width: 320px;
+
+  scroll-behavior: smooth;
 }

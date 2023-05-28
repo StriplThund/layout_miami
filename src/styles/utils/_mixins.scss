@@ -1,5 +1,6 @@
 @mixin hover($_property, $_toValue) {
   transition: #{$_property} 0.3s;
+
   &:hover {
     #{$_property}: $_toValue;
   }
@@ -28,3 +29,55 @@
     padding-inline: 120px;
   }
 }
+
+@mixin contentPaddingBlock {
+  padding-block: 60px 120px;
+
+  @include onTablet() {
+    padding-block: 120px 120px;
+  }
+
+  @include onDesktop() {
+    padding-block: 120px 182px;
+  }
+}
+
+@mixin pageGridLayout {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 20px;
+
+  @include onTablet() {
+    grid-template-columns: repeat(6, 1fr);
+    column-gap: 24px;
+  }
+
+  @include onDesktop() {
+    grid-template-columns: repeat(12, 1fr);
+    column-gap: 24px;
+  }
+}
+
+/* #region article */
+
+@mixin articleTitleStyle {
+  font-size: 24px;
+  line-height: 34px;
+
+  margin-bottom: 8px;
+}
+
+@mixin articleDescStyle {
+  font-size: 16px;
+  line-height: 22px;
+
+  margin-bottom: 16px;
+}
+
+@mixin articlePriceStyle {
+  font-size: 24px;
+  line-height: 34px;
+  font-weight: 700;
+}
+
+/* #endregion */
