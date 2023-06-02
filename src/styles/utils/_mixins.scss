@@ -55,21 +55,17 @@
 }
 
 @mixin pageLayout {
+  --columns: 2;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
   column-gap: 20px;
-  min-width: 280px;
-  margin: 0 auto;
+  grid-template-columns: repeat(var(--columns), 1fr);
 
   @include onTablet {
-    grid-template-columns: repeat(6, 1fr);
-    column-gap: 20px;
-    max-width: 744px;
+    --columns: 6;
+    column-gap: 24px;
   }
 
   @include onDesktop {
-    grid-template-columns: repeat(12, 1fr);
-    column-gap: 24px;
-    min-width: 1020px;
+    --columns: 12;
   }
 }

@@ -1,0 +1,12 @@
+.page {
+  font-size: 0.63rem;
+  scroll-behavior: smooth;
+
+  @include onTablet {
+    font-size: 0.63rem;
+  }
+
+  @include onDesktop {
+    font-size: 0.63rem;
+  }
+}

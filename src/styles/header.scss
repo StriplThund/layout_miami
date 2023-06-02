@@ -2,7 +2,7 @@ body {
   margin: 0;
   font-family: "Cinzel", serif;
   color: $text-color;
-  min-width: 320px;
+  min-width: 32rem;
 }
 
 p {
@@ -24,72 +24,37 @@ a {
   background-image: url(../images/photos/header__photo.png);
   background-position: center;
   background-size: cover;
+  box-sizing: border-box;
 
   @include defaulPaddingInline;
-  padding-top: 25px;
+  padding-top: 2.5rem;
 
   &__title {
     width: fit-content;
 
     margin: 0 auto;
     padding: 0;
-    margin-top: 129px;
+    margin-top: 12.9rem;
 
     font-family: "Cinzel", serif;
-    font-size: 40px;
-    line-height: 40px;
+    font-size: 4rem;
+    line-height: 4rem;
     font-weight: 700;
     text-align: center;
-    letter-spacing: -1.5px;
+    letter-spacing: -0.15rem;
 
     @include hover(transform, scale(1.1));
 
     @include onTablet {
-      font-size: 64px;
-      line-height: 64px;
-      margin-top: 30px;
+      font-size: 6.4rem;
+      line-height: 6.4rem;
+      margin-top: 3rem;
     }
 
     @include onDesktop {
-      font-size: 80px;
-      line-height: 80px;
-      margin-top: 41px;
-    }
-  }
-}
-
-.icon {
-  width: 24px;
-  height: 24px;
-  background-size: cover;
-  display: block;
-
-  @include onTablet {
-    width: 32px;
-    height: 32px;
-  }
-
-  &--phone {
-    background-image: url(../images/icons/Icon-Phone-call.svg);
-  }
-
-  &--burger {
-    background-image: url(../images/icons/Icon-Burger-menu.svg);
-    transition: 0.2s;
-
-    &:hover {
-      background-image: url(../images/icons/Icon-Burger-menu-hover.png);
-    }
-  }
-  &--cross {
-    width: 24px;
-    height: 24px;
-
-    background-image: url(../images/icons/Icon-Close.svg);
-
-    @include onDesktop {
-      width: 32px;
-      height: 32px;
+      font-size: 8rem;
+      line-height: 8rem;
+      margin-top: 4.1rem;
     }
   }
 }

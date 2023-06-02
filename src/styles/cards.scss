@@ -1,7 +1,7 @@
 .cards {
   grid-column: span 2;
   @include pageLayout;
-  row-gap: 48px;
+  row-gap: 4.8rem;
 
   @include onTablet {
     grid-column: span 6;
@@ -15,11 +15,11 @@
     grid-column: span 2;
     display: flex;
     flex-direction: column;
-    gap: 24px;
+    gap: 2.4rem;
     text-align: center;
 
     @include onTablet {
-      gap: 32px;
+      gap: 3.2rem;
       grid-column: 2 / 6;
     }
 
@@ -33,14 +33,15 @@
   }
 
   &__title {
-    font-size: 24px;
-    line-height: 34px;
+    font-size: 2.4rem;
+    line-height: 3.4rem;
     font-weight: 700;
     color: $main-accent;
   }
 
   &__desc {
+    font-size: 1.6rem;
     font-family: "Roboto", sans-serif;
-    line-height: 27px;
+    line-height: 2.7rem;
   }
 }

@@ -2,9 +2,11 @@
 @import "fonts";
 @import "typography";
 
+@import "page";
 @import "logo";
-
+@import "icon";
 @import "header";
+@import "contact";
 @import "top-bar";
 @import "menu";
 
@@ -13,3 +15,5 @@
 @import "section";
 @import "schedule";
 @import "view";
+@import "button";
+@import "footer";

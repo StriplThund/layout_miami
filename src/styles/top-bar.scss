@@ -2,17 +2,17 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-size: 16px;
-  line-height: 27px;
+  font-size: 1.6rem;
+  line-height: 2.7rem;
   font-weight: 700;
 
   &__icons {
     display: flex;
-    gap: 24px;
+    gap: 2.4rem;
     align-items: center;
 
     @include onTablet {
-      gap: 50px;
+      gap: 5rem;
     }
   }
 
@@ -20,12 +20,12 @@
     display: grid;
     grid-template-columns: repeat(2, auto);
     align-items: center;
-    column-gap: 20px;
+    column-gap: 2rem;
   }
 
   &__adress-info {
     display: grid;
-    row-gap: 8px;
+    row-gap: 0.8rem;
     text-align: right;
     transform: translateX(-30%);
     opacity: 0;

@@ -2,23 +2,23 @@
   display: flex;
 
   &__img {
-    width: 64px;
-    height: 46px;
+    width: 6.4rem;
+    height: 4.6rem;
 
     @include onTablet {
-      width: 87px;
-      height: 65px;
+      width: 8.7rem;
+      height: 6.5rem;
     }
 
     &--menu_size {
       @include onTablet {
-        width: 64px;
-        height: 46px;
+        width: 6.4rem;
+        height: 4.6rem;
       }
 
       @include onDesktop {
-        width: 87px;
-        height: 65px;
+        width: 8.7rem;
+        height: 6.5rem;
       }
     }
   }
