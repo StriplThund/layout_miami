@@ -2,6 +2,14 @@
 @import "fonts";
 @import "typography";
 
-body {
-  background: $c-gray;
-}
+@import "logo";
+
+@import "header";
+@import "top-bar";
+@import "menu";
+
+@import "cards";
+@import "main-content";
+@import "section";
+@import "schedule";
+@import "view";

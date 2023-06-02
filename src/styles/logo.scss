@@ -1,0 +1,25 @@
+.logo {
+  display: flex;
+
+  &__img {
+    width: 64px;
+    height: 46px;
+
+    @include onTablet {
+      width: 87px;
+      height: 65px;
+    }
+
+    &--menu_size {
+      @include onTablet {
+        width: 64px;
+        height: 46px;
+      }
+
+      @include onDesktop {
+        width: 87px;
+        height: 65px;
+      }
+    }
+  }
+}

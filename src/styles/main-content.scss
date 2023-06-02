@@ -1,0 +1,11 @@
+.main-content {
+  @include defaulPaddingInline;
+  padding-top: 100px;
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+
+  @include onTablet {
+    padding-top: 140px;
+  }
+}

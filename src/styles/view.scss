@@ -1,0 +1,109 @@
+.view {
+
+  &__photos {
+    @include pageLayout;
+
+    &--triple {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 8px;
+    }
+
+    @include onTablet {
+      @include pageLayout;
+    }
+  }
+
+  &__photo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    grid-column: span 1;
+
+    @include onTablet {
+      &--optional {
+        width: 0;
+        height: 0;
+      }
+
+      &--wide {
+        grid-column: span 4;
+      }
+
+      &--square {
+        grid-column: span 2;
+      }
+
+      &--square-big {
+        grid-column: span 3;
+      }
+    }
+
+    @include onDesktop {
+      &--optional {
+        width: 100%;
+        height: 100%;
+        grid-column: span 4;
+      }
+
+      &--wide {
+        grid-column: span 8;
+      }
+
+      &--square {
+        grid-column: span 4;
+      }
+
+      &--square-big {
+        grid-column: span 4;
+      }
+    }
+  }
+
+  &__info {
+    margin-top: 24px;
+    grid-column: span 2;
+    line-height: 27px;
+
+    @include onTablet {
+      grid-column: span 6;
+    }
+  }
+
+  &__title {
+    color: $main-accent;
+    font-size: 16px;
+    font-weight: 700;
+  }
+
+  &__button {
+    margin-top: 40px;
+    grid-column: span 2;
+
+    @include onTablet {
+      grid-column: 2 / 6;
+    }
+
+    @include onDesktop {
+      grid-column: 5 / 9;
+    }
+  }
+}
+
+.button {
+  display: block;
+  height: 56px;
+  width: 100%;
+  color: $text-color;
+  text-align: center;
+  line-height: 56px;
+  font-weight: 700;
+
+  background-color: $main-accent;
+
+  @include hover (background-color, #ae1c23);
+
+  &:active {
+    background-color: #eb343d;
+  }
+}
